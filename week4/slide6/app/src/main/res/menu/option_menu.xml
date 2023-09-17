@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item android:id="@+id/item1"
+        android:title="context menu"
+        android:icon="@drawable/ic_launcher_background"
+        android:orderInCategory="100"
+        app:showAsAction="withText"
+        />
+    <item android:id="@+id/item2"
+        android:title="popup menu"
+        android:icon="@drawable/ic_launcher_background"
+        android:orderInCategory="100"
+        app:showAsAction="withText"
+        />
+    <item android:id="@+id/item3"
+        android:title="item3"
+        android:icon="@drawable/ic_launcher_background"
+        android:orderInCategory="100"
+        app:showAsAction="withText">
+        <menu>
+            <item android:id="@+id/item_sub1"
+                android:title="sub1"/>
+            <item android:id="@+id/item_sub2"
+                android:title="sub2"/>
+        </menu>
+    </item>
+</menu>
