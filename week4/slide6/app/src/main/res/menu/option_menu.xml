@@ -14,6 +14,18 @@
         android:orderInCategory="100"
         app:showAsAction="withText"
         />
+    <item android:id="@+id/slide7Act"
+        android:title="Slide7Actitity"
+        android:icon="@drawable/ic_launcher_background"
+        android:orderInCategory="100"
+        app:showAsAction="withText"
+        />
+    <item android:id="@+id/mainAct"
+        android:title="MainActivity"
+        android:icon="@drawable/ic_launcher_background"
+        android:orderInCategory="100"
+        app:showAsAction="withText"
+        />
     <item android:id="@+id/item3"
         android:title="item3"
         android:icon="@drawable/ic_launcher_background"

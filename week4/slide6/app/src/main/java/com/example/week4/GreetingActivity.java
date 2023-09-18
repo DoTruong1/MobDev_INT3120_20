@@ -1,43 +1,59 @@
 package com.example.week4;
 
-import android.content.Intent;
-import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.annotation.NonNull;
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.transition.Slide;
-import android.view.View;
-
-import androidx.core.view.WindowCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
-import com.example.week4.databinding.ActivityMainBinding;
-
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.week4.databinding.ActivityGreetingBinding;
 
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityMainBinding binding;
-    private TextView textView;
+public class GreetingActivity extends AppCompatActivity {
+
+    private ActivityGreetingBinding binding;
+    private TextView feedbackTextGreeting;
+    private Button goBack;
+    private String fullName;
+    private String message;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityGreetingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         setSupportActionBar(binding.toolbar);
+        goBack = findViewById(R.id.goBackButton);
+        this.feedbackTextGreeting = findViewById(R.id.feedbackTextGreeting);
+
+        Intent intent = this.getIntent();
+        this.fullName = intent.getStringExtra("fullName");
+        this.message = intent.getStringExtra("message");
+        feedbackTextGreeting.setText(message);
+        goBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goBack();
+            }
+        });
     }
+
+    public void goBack() {
+        this.onBackPressed();
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -49,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        // Handle action bar item clicks here. The action bar will
+
+// Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
@@ -72,10 +89,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+
     }
     public void openContext() {
         Fragment fragment = new FirstFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
         transaction.replace(R.id.frameLayout, fragment).commit();
 
     }
@@ -84,10 +103,14 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frameLayout, fragment).commit();
     }
-//    @Override
-//    public boolean onSupportNavigateUp() {
-//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-//        return NavigationUI.navigateUp(navController, appBarConfiguration)
-//                || super.onSupportNavigateUp();
-//    }
+
+    @Override
+    public void finish() {
+        Intent data = new Intent();
+        String feedback = "OK, Hello " + this.fullName + ". How are you?";
+        data.putExtra("feedback", feedback);
+
+        this.setResult(Activity.RESULT_OK, data);
+        super.finish();
+    }
 }
