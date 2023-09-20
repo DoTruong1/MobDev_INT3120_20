@@ -69,6 +69,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
             return true;
+        } else if (id == R.id.implicitAct) {
+            Intent intent = new Intent(this, ImplicitIntent.class);
+            startActivity(intent);
+            return true;
         }
 
         return super.onOptionsItemSelected(item);

@@ -26,6 +26,12 @@
         android:orderInCategory="100"
         app:showAsAction="withText"
         />
+    <item android:id="@+id/implicitAct"
+        android:title="implicitAct"
+        android:icon="@drawable/ic_launcher_background"
+        android:orderInCategory="100"
+        app:showAsAction="withText"
+        />
     <item android:id="@+id/item3"
         android:title="item3"
         android:icon="@drawable/ic_launcher_background"
