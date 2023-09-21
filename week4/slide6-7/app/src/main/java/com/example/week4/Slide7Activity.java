@@ -91,12 +91,16 @@ public class Slide7Activity extends AppCompatActivity {
         } else if (id == R.id.item2) {
             openPopup();
             return true;
-        }else if (id == R.id.slide7Act) {
+        } else if (id == R.id.slide7Act) {
             Intent intent = new Intent(this, Slide7Activity.class);
             startActivity(intent);
             return true;
         } else if (id == R.id.mainAct) {
             Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.implicitAct) {
+            Intent intent = new Intent(this, ImplicitIntent.class);
             startActivity(intent);
             return true;
         }
