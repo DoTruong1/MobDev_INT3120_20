@@ -7,29 +7,25 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.week3.databinding.FragmentFirstBinding;
-import com.example.week3.databinding.FragmentSecondBinding;
+import com.example.week3.databinding.FirstLinearBinding;
 
 
-public class FirstFragment extends Fragment {
-    private FragmentFirstBinding binding;
-    public FirstFragment()  {}
+public class FirstLinear extends Fragment {
+    private FirstLinearBinding binding;
+    public FirstLinear()  {}
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
+        binding = FirstLinearBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-
     }
 
     @Override

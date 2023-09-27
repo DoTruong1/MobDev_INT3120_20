@@ -3,8 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.week3.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/first_linear"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="First Linear"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/first_relative"
+        android:orderInCategory="100"
+        android:title="First relative"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/first_table"
+        android:orderInCategory="100"
+        android:title="First Table"
+        app:showAsAction="never" />
+    <item android:id="@+id/first_constraints"
+    android:orderInCategory="100"
+    android:title="First Constraints"
+    app:showAsAction="never" />
+    <item android:id="@+id/linear"
+        android:orderInCategory="100"
+        android:title="Linear"
+        app:showAsAction="never" />
+    <item android:id="@+id/constraint"
+        android:orderInCategory="100"
+        android:title="Constraint"
+        app:showAsAction="never" />
+    <item android:id="@+id/relative"
+        android:orderInCategory="100"
+        android:title="Relative"
+        app:showAsAction="never" />
+    <item android:id="@+id/table"
+        android:orderInCategory="100"
+        android:title="table"
         app:showAsAction="never" />
 </menu>

@@ -8,23 +8,40 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
-
-
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:id="@+id/tab_layout"
-        android:background="@color/white"
-        app:tabInlineLabel="true"
-        app:tabMode="fixed"
-        app:tabTextColor="@color/material_dynamic_neutral70"
-        app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"/>
-    <androidx.viewpager2.widget.ViewPager2
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/view_pager"/>
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TEST"/>
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?actionBarSize"-->
+<!--        android:id="@+id/tab_layout"-->
+<!--        android:background="@color/white"-->
+<!--        app:tabInlineLabel="true"-->
+<!--        app:tabMode="fixed"-->
+<!--        app:tabTextColor="@color/material_dynamic_neutral70"-->
+<!--        app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"/>-->
+<!--    <androidx.viewpager2.widget.ViewPager2-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/view_pager"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="TEST"/>-->
 </LinearLayout>
