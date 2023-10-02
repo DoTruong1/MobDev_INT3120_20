@@ -1,8 +1,10 @@
 package com.example.week5
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.SharedPreferences
 import android.net.ConnectivityManager
 import android.os.Build
 import android.os.Bundle
@@ -22,13 +24,25 @@ import com.example.week5.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private lateinit var editText: EditText
     private lateinit var startButton : Button
     private lateinit var stopButton : Button
-    lateinit var broadcastReiceverStatic: BroadcastReiceverStatic
 
+    private lateinit var saveNameBtn : Button
+    private lateinit var changeNameBtn : Button
+    private lateinit var nameInput : EditText
+    private lateinit var preferences: SharedPreferences
+
+    private lateinit var broadcastReiceverStatic: BroadcastReiceverStatic
+
+
+    companion object {
+        private const val PREFERENCES_FILE = "preferences_file"
+        private var isEditable = true
+    }
     override fun onStop() {
         unregisterReceiver(broadcastReiceverStatic)
         super.onStop()
@@ -49,6 +63,29 @@ class MainActivity : AppCompatActivity() {
         stopButton = findViewById(R.id.buttonStop)
         editText = findViewById(R.id.input)
 
+
+        nameInput = findViewById(R.id.nameInput)
+        changeNameBtn = findViewById(R.id.changeName)
+        saveNameBtn = findViewById(R.id.saveName)
+        preferences = getSharedPreferences(PREFERENCES_FILE, Context.MODE_PRIVATE)
+
+
+
+        val name : String = preferences.getString("name", "").toString()
+        if (name.isNotEmpty()) {
+            isEditable = false;
+            nameInput.isEnabled = isEditable
+        }
+        nameInput.setText(name)
+        changeNameBtn.setOnClickListener {
+            startSaving()
+        }
+
+        saveNameBtn.setOnClickListener {
+            saveName()
+        }
+
+
         startButton.setOnClickListener {
             startService()
         }
@@ -67,6 +104,19 @@ class MainActivity : AppCompatActivity() {
 //        }
     }
 
+    private fun saveName() {
+        isEditable = false;
+        val sharedPreferences : SharedPreferences.Editor =   preferences.edit()
+        sharedPreferences.putString("name", nameInput.text.toString())
+        nameInput.isEnabled = isEditable
+        sharedPreferences.commit()
+    }
+
+    private fun startSaving() {
+        isEditable = true;
+        nameInput.setText(preferences.getString("name", "").toString())
+        nameInput.isEnabled = isEditable
+    }
 
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -106,4 +156,12 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, MyService::class.java)
         stopService(intent)
     }
+
+    private fun isExist() : Boolean {
+        if(preferences.contains("name") && preferences.getString("user_id", null) != null) {
+            return true
+        }
+        return false
+    }
+
 }

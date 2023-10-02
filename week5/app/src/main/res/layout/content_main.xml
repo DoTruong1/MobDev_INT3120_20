@@ -12,7 +12,7 @@
         android:id="@+id/input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Input"/>
+        android:hint="put something here to set service notification text"/>
     <Button
         android:id="@+id/buttonStart"
         android:layout_width="wrap_content"
@@ -31,6 +31,29 @@
         android:layout_height="wrap_content"
         android:text="Bật wifi và tắt wifi để xem Broadcast demo"
         />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="put someName Here to save to Shared file"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/saveName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Name"
+            />
+        <Button
+            android:id="@+id/changeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Name"
+            />
+    </LinearLayout>
     <!--    <fragment-->
 <!--        android:id="@+id/nav_host_fragment_content_main"-->
 <!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
