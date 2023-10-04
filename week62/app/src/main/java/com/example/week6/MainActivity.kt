@@ -3,6 +3,8 @@ package com.example.week6
 import android.content.ContentResolver
 import android.content.ContentUris
 import android.content.ContentValues
+import android.content.Intent
+import android.content.ServiceConnection
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -20,6 +22,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var updateButton: Button
     lateinit var insertButton: Button
     lateinit var deleteButton: Button
+
+    private lateinit var musicService: MusicService
+    private var isBound = false
     companion object {
         var currId : Int = -1
     }
@@ -35,6 +40,9 @@ class MainActivity : AppCompatActivity() {
         insertButton = findViewById(R.id.insertBtn)
         updateButton = findViewById(R.id.updateBtn)
         deleteButton = findViewById(R.id.deleteBtn)
+        val playButton = findViewById<Button>(R.id.playButton)
+        val pauseButton = findViewById<Button>(R.id.pauseButton)
+        val stopButton = findViewById<Button>(R.id.stopButton)
 
         //create db
         var databaseTest = DatabaseTest(applicationContext)
@@ -126,5 +134,19 @@ class MainActivity : AppCompatActivity() {
 //        if (rs.moveToFirst()) {
 //            Toast.makeText(applicationContext, rs.getString(1) + "\n" + rs.getString(2), Toast.LENGTH_LONG).show()
 //        }
+        playButton.setOnClickListener {
+            startService(Intent(this, MusicService::class.java))
+        }
+
+        stopButton.setOnClickListener {
+            stopService(Intent(this, MusicService::class.java))
+        }
+
+
     }
+
+//    override fun onStart() {
+//        super.onStart()
+//        var serviceIntent = Intent(this, MusicService::class.java)
+//    }
 }
