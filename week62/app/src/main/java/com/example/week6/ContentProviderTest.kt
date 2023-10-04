@@ -12,8 +12,11 @@ class ContentProviderTest : ContentProvider() {
     companion object {
         val PROVIDER_NAME : String = "com.example.week6.provider/ContentProviderTest"
         val URL : String = "content://$PROVIDER_NAME/${DatabaseTest.TABLE_NAME}"
+        val URI : Uri = Uri.parse(URL)
         val CONTENT_URI : Uri = Uri.parse(URL)
-        val _ID : String = "id"
+        val ID : String = "id"
+        val NAME : String = "name"
+        val NUMBER : String = "number"
     }
     override fun onCreate(): Boolean {
         var helper : DatabaseTest? = context?.let { DatabaseTest(it) }

@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:authorities="com.example.week6.provider"
+            android:name="com.example.wee6.ContentProviderTest"
+            android:exported="true"
+            android:grantUriPermissions="true"/>
     </application>
 
 </manifest>
