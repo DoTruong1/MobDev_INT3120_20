@@ -10,72 +10,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7a24c9b-f5c8-4efc-a5cc-4b6a7e8a6f36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/week7/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/week7/LocationActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/week7/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/week7/MapsActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/week7/MenuActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/week7/SmsActivityNew.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/week7/SmsItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/week7/WebviewActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/week7/WifiActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_location.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sms.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_webview.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_wifi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_wifi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_sms.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-land/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-v23/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-w1240dp/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-w600dp/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/week7/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MobDev_INT3120_20.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/androidTest/java/com/example/week6/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/androidTest/java/com/example/week6/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/java/com/example/week6/ContentProviderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/java/com/example/week6/ContentProviderTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/java/com/example/week6/DatabaseTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/java/com/example/week6/DatabaseTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/java/com/example/week6/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/java/com/example/week6/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/java/com/example/week6/MusicService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/java/com/example/week6/MusicService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/java/com/example/week6/UserData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/java/com/example/week6/UserData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-anydpi/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/raw/song.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/raw/song.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/xml/backup_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/app/src/test/java/com/example/week6/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/app/src/test/java/com/example/week6/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week6/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/week5+6/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +106,9 @@
   <component name="RecentsManager">
     <key name="android.template.1786140199">
       <recent name="com.example.week7" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MobDev_INT3120_20\week7" />
     </key>
   </component>
   <component name="RunManager">
