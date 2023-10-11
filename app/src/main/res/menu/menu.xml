@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item1"
+        android:title="Sensors" />
+    <item
+        android:id="@+id/menu_item2"
+        android:title="WiFi" />
+    <item
+        android:id="@+id/menu_item3"
+        android:title="SMS" />
+    <item
+        android:id="@+id/menu_item4"
+        android:title="Location" />
+    <item
+        android:id="@+id/menu_item5"
+        android:title="Map" />
+    <item
+        android:id="@+id/menu_item6"
+        android:title="Webview" />
+</menu>
